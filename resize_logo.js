@@ -18,7 +18,7 @@ const sizes = [16, 32, 48, 128];
 const inputFileName = path.basename(inputImagePath, path.extname(inputImagePath));
 
 sizes.forEach((size) => {
-  const outputFilePath = path.join(outputFolderPath, `${inputFileName}_${size}.png`);
+  const outputFilePath = path.join(outputFolderPath, `${inputFileName}-${size}.png`);
 
   sharp(inputImagePath)
     .resize(size, size)
